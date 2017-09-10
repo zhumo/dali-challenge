@@ -3,6 +3,8 @@
     <member-image :iconUrl='member.iconUrl'/>
     <h1 class="member-name"><a :href='member.url'>{{member.name}}</a></h1>
     <p class="member-message">{{member.message}}</p>
+    <p class="member-terms">Terms: {{member.terms_on.join(", ")}}</p>
+    <p v-if='member.project.length > 0' class="member-projects">Projects: {{member.project.join(", ")}}</p>
   </div>
 </template>
 
@@ -42,4 +44,6 @@ export default {
 .member-message {
   text-align: center;
 }
+.member-terms { text-align: center; }
+.member-projects { text-align: center; }
 </style>
