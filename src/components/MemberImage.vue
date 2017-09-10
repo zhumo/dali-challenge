@@ -1,5 +1,5 @@
 <template>
-  <img :src="imageSrc"/>
+  <img class="member-image" :src="imageSrc"/>
 </template>
 
 <script>
@@ -17,3 +17,12 @@ export default {
   },
 }
 </script>
+
+<style>
+.member-image {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  display: block;
+}
+</style>
