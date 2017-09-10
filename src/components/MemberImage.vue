@@ -2,7 +2,7 @@
   <div class="member-image">
     <img class="member-photo" :src="imageSrc"/>
     <yandex-map class="member-map"
-      style="width: 100%; height: 100%"
+      style="width: 200px; height: 200px;"
       :coords="coords"
       :behaviors="[]"
       :controls="['zoomControl']"
@@ -44,17 +44,19 @@ export default {
   display: block;
 }
 .member-photo {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
 }
 .member-map {
-  display: none;
+  visibility: hidden;
+  position: absolute;
 }
 
 .member-image:hover .member-photo {
-  display: none;
+  visibility: hidden;
 }
 .member-image:hover .member-map {
-  display: block;
+  visibility: visible;
 }
 </style>
