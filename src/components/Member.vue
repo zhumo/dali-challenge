@@ -1,7 +1,7 @@
 <template>
   <div class="member-card">
     <member-image :coords='member.lat_long' :iconUrl='member.iconUrl'/>
-    <h1 class="member-name"><a :href='member.url'>{{member.name}}</a></h1>
+    <member-name :name='member.name' :path='member.url'/>
     <p class="member-message">{{member.message}}</p>
     <member-terms :terms='member.terms_on'/>
     <member-projects :projects='member.project'/>
@@ -10,6 +10,7 @@
 
 <script>
 import MemberImage from './MemberImage'
+import MemberName from './MemberName'
 import MemberTerms from './MemberTerms'
 import MemberProjects from './MemberProjects'
 
@@ -17,6 +18,7 @@ export default {
   name: 'member',
   components: {
     MemberImage,
+    MemberName,
     MemberTerms,
     MemberProjects,
   },
@@ -42,6 +44,5 @@ export default {
   padding: 10px;
 }
 
-.member-name { text-align: center; }
 .member-message { text-align: center; }
 </style>
