@@ -3,20 +3,22 @@
     <member-image :iconUrl='member.iconUrl'/>
     <h1 class="member-name"><a :href='member.url'>{{member.name}}</a></h1>
     <p class="member-message">{{member.message}}</p>
-    <p v-if='member.project.length > 0' class="member-projects">Projects: {{member.project.join(", ")}}</p>
     <member-terms :terms='member.terms_on'/>
+    <member-projects :projects='member.project'/>
   </div>
 </template>
 
 <script>
 import MemberImage from './MemberImage'
 import MemberTerms from './MemberTerms'
+import MemberProjects from './MemberProjects'
 
 export default {
   name: 'member',
   components: {
     MemberImage,
     MemberTerms,
+    MemberProjects,
   },
   props: {
     member: {
@@ -42,5 +44,4 @@ export default {
 
 .member-name { text-align: center; }
 .member-message { text-align: center; }
-.member-projects { text-align: center; }
 </style>
