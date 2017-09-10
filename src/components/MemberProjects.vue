@@ -22,7 +22,7 @@ export default {
       return this.filteredProjects.length > 0
     },
     projectsList: function() {
-      return filteredProjects.join(', ')
+      return this.filteredProjects.join(', ')
     }
   }
 }

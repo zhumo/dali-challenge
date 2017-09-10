@@ -3,9 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import VueResource from 'vue-resource'
+import YandexMaps from 'vue-yandex-maps'
 
 Vue.config.productionTip = false
 Vue.use(VueResource)
+Vue.use(YandexMaps)
 
 /* eslint-disable no-new */
 new Vue({

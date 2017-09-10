@@ -1,6 +1,6 @@
 <template>
   <div class="member-card">
-    <member-image :iconUrl='member.iconUrl'/>
+    <member-image :coords='member.lat_long' :iconUrl='member.iconUrl'/>
     <h1 class="member-name"><a :href='member.url'>{{member.name}}</a></h1>
     <p class="member-message">{{member.message}}</p>
     <member-terms :terms='member.terms_on'/>
@@ -33,7 +33,7 @@ export default {
 .member-card {
   border: gray solid 1px;
   display: inline-block;
-  width: 25%;
+  width: 20%;
   min-width: 200px;
   height: 500px;
   margin-left: 10px;
