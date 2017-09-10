@@ -32,7 +32,7 @@ export default {
 <style>
 .member-card {
   border: gray solid 1px;
-  display: inline-block;
+  display: inline-table;
   width: 20%;
   min-width: 200px;
   height: 500px;
