@@ -19,3 +19,11 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+# Live Site
+Live on Heroku: 
+
+# Github Pages
+Content could not be served on Github Pages because the API is served over HTTP but Github requires that I serve it over HTTPS if I use the default domain of zhumo.github.io/etc/etc.
+
+Instead of working around all that, I just chose to use Heroku
